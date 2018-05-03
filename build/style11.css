@@ -1,0 +1,19 @@
+
+
+html{
+background-image:url("Images/StyleBackground.jpg");
+}
+
+button {
+	background-color: #D3D3D3;
+	border: 2px solid #cccccc;
+	font-size: 15px;
+	height: 30px;
+	padding: 4px 6px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	width: 400px;
+	text-align:center;
+}
+/* # divset
+{background-image:url("Images/StyleBackground.jpg")} */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical Trial Dapp</title>
+ 
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+ 
+		
+</head>
+<body>
+<div class="wrapper">
+  
+  
+  <h1>Principal Investigator</h1>
+  
+	
+	<div class="form" id="sign-up-form">
+		
+		
+		<h2 class="form-title">Test Progress</h2>
+		<select name="volunteer" id="volunteer" onchange="GetUserDetails();">
+        <option disabled="disabled" selected text-align:center >Volunteers</option>
+		</select>
+		
+		
+		  <table id = "table1" style='display:none'>  
+			<tr><td><b><label class = "black">Name</label></td><td>:</td></b><td><span class="black" span id="getval1"></span></td></tr>
+			<tr><td><b><label class = "black">Contact No.</label></td><td>:</td></b><td><span class="black" span id="getval2"></span></td></tr>
+			<tr><td><b><label class = "black">D.O.B</label></td><td>:</td></b><td><span class="black" span id="getval3"></span></td></tr>
+			<tr><td><b><label class = "black">Gender</label></td><td>:</td></b><td><span class="black" span id="getval4"></span></td></tr>
+			<tr><td><b><label class = "black">Weight</label></td><td>:</td></b><td><span class="black" span id="getval5"></span></td></tr>
+			<tr><td><b><label class = "black">Height</label><td>:</td></td></b><td><span class="black" span id="getval6"></span></td></tr> 
+			<tr><td><b><label class = "black">Race</label></td><td>:</td></b><td><span class="black" span id="getval7"></span></td></tr>
+			<tr><td><b><label class = "black">Smoking</label></td><td>:</td></b><td><span class="black" span id="getval8"></span></td></tr>
+			<tr><td><b><label class = "black">Allergy</label></td><td>:</td></b><td><span class="black" span id="getval9"></span></td></tr>
+			<tr><td><b><label class = "black">Med.Condition</label></td><td>:</td></b><td><span class="black" span id="getval10"></span></td></tr>
+			</table>		   
+		   
+		
+		<input type="text" class="input-std" id="Seriousness" placeholder="Seriousness">
+		<input type="text" class="input-std" id="Expectedness" placeholder="Expectedness">
+		<input type="text" class="input-std" id="Relatedness" placeholder="Relatedness">
+		
+		
+				
+		<button type="button" class="btn-submit" id="submit_details" onclick="InvestigatorSubmit()">Submit to Medical Affairs</button>
+	</div>
+	</div>
+				
+	    <script src="./app.js"></script>
+		<script src="./pharmacologist.js"></script>
+	    
+</body>
+</html>

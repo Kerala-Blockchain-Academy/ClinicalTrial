@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical Trial Dapp</title>
+ 
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+ 
+		
+</head>
+<body>
+<div class="wrapper">
+  
+  
+  <h1>CRO screen</h1>
+  
+	
+	<div class="form" id="sign-up-form">
+		
+		<h2 class="form-title">Initiate Test</h2>
+		
+		<input type="text" class="input-std" id="hypo" placeholder="test Hypothesis">
+		<input type="text" class="input-std" id="drugname" placeholder="Drug Name">
+		<input type="text" class="input-std" id="dosage" placeholder="Dosage">
+		<input type="text" class="input-std" id="subjectcount" placeholder="Number of Subjects">
+		<input type="text" class="input-std" id="criteria" placeholder="Criteria">
+		 <select name="role" id="role">
+                                 <option disabled="disabled" selected text-align:center >Pharmacologist</option>
+                                <option value="Pharma1">Pharma1</option>
+                                <option value="Pharmacologist2">Pharma2</option>
+                                <option value="Pharmacologist3">Pharma3</option>
+                                <option value="Pharmacologist4">Pharma4</option>
+                                </select>		
+		
+		<button type="button" class="btn-submit" id="sign-up" onclick="RegisterCRO()">Initiate Test</button>
+		
+	</div>
+	</div>
+				
+	    <script src="./app.js"></script>
+	   
+</body>
+</html>

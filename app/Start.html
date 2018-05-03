@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical Trial Dapp</title>
+ 
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+ 
+		
+</head>
+<body>
+<div class="wrapper">
+  
+  
+  <h1>Clinical Trial Dapp</h1>
+  
+	
+	<div class="form" id="sign-up-form">
+		
+		<h3 class="form-title">Volunteer Registration</h3>
+		<input type="text" class="input-std" id="name" placeholder="Name">
+		<input type="number" class="input-std" id="contact" placeholder="Emergency Contact">
+		<input type="date" class="input-std" id="dob">
+		<input type="number" class="input-std" id="weight" placeholder="Enter weight">
+		<input type="number" class="input-std" id="height" placeholder="Enter height">
+		
+		<table>
+		<tr>
+		<td>Gender:</td>
+		<td><input type="radio" id="g1" name="gender" value="Male" checked></td>
+		<td>Male</td>
+		<td><input type="radio" id="g2" name="gender" value="Female"></td>
+		<td>Female</td>
+		<td><input type="radio" id="g3" name="gender" value="Other"></td>
+		<td>Other&nbsp</td>
+		</tr>
+		</table>
+		
+		<table>
+		<tr>
+		<td>Race:</td>
+		<td><input type="radio" id="c1"  name="race" value="White" checked></td>
+		<td>White</td>
+		<td><input type="radio" id="c2"  name="race" value="Black"></td>
+		<td>Black</td>
+		<td><input type="radio" id="c3"  name="race" value="Asian"></td>
+		<td>Asian</td>
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+		</tr>		
+		</table>
+		<table>
+		<tr>
+		<td>Smoking:</td>
+		<td><input type="radio" id="s1" name="smoke" value="Smoker" checked></td>
+		<td>Yes</td>
+		<td><input type="radio" id="s2" name="smoke" value="Non-Smoker"></td>
+		<td>No &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+		
+		</tr>
+		</table>
+		
+		<input type="text" class="input-std" id="allergy" placeholder="Allergy if any">	
+		<input type="text" class="input-std" id="history" placeholder="other medical history">	
+		<select name="Assign To" id="pharmacologist" >
+        <option disabled="disabled" selected text-align:center >Assigned To</option>
+		<option>Pharma1</option>
+		<option>Pharma2</option>
+		<option>Pharma3</option>
+		<option>pharma4</option>
+		</select>
+		<div class="popup">
+		<span class="popuptext" id="myPopup">Registration Complete.</span>
+		</div>
+		<button type="button" class="btn-submit" id="sign-up" onclick="RegisterUser();Popupup();">Register</button>
+		
+		
+	</div>
+	</div>
+				
+	    <script src="./app.js"></script>
+	   
+</body>
+</html>

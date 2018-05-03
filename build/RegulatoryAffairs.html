@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical Trial Dapp</title>
+ 
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+ 
+		
+</head>
+<body>
+<div class="wrapper">
+  
+  
+  <h1>Regulatory Affairs</h1>
+  
+	
+	<div class="form" id="sign-up-form">
+		
+		
+		<h2 class="form-title">Test Progress</h2>
+		<select name="volunteer" id="volunteer" onchange="GetUserDetails();tableget();tableget1();dfr();">
+        <option disabled="disabled" selected text-align:center >Volunteers</option>
+		</select>
+		
+		
+		  <table id = "table1" style='display:none'>  
+			<tr><td><b><label class = "black">Name</label></td><td>:</td></b><td><span class="black" span id="getval1"></span></td></tr>
+			<tr><td><b><label class = "black">Contact No.</label></td><td>:</td></b><td><span class="black" span id="getval2"></span></td></tr>
+			<tr><td><b><label class = "black">D.O.B</label></td><td>:</td></b><td><span class="black" span id="getval3"></span></td></tr>
+			<tr><td><b><label class = "black">Gender</label></td><td>:</td></b><td><span class="black" span id="getval4"></span></td></tr>
+			<tr><td><b><label class = "black">Weight</label></td><td>:</td></b><td><span class="black" span id="getval5"></span></td></tr>
+			<tr><td><b><label class = "black">Height</label><td>:</td></td></b><td><span class="black" span id="getval6"></span></td></tr> 
+			<tr><td><b><label class = "black">Race</label></td><td>:</td></b><td><span class="black" span id="getval7"></span></td></tr>
+			<tr><td><b><label class = "black">Smoking</label></td><td>:</td></b><td><span class="black" span id="getval8"></span></td></tr>
+			<tr><td><b><label class = "black">Allergy</label></td><td>:</td></b><td><span class="black" span id="getval9"></span></td></tr>
+			<tr><td><b><label class = "black">Med.Condition</label></td><td>:</td></b><td><span class="black" span id="getval10"></span></td></tr>
+			
+			<tr><td><b><label class = "black">Seriousness</label></td><td>:</td></b><td><span class="black" span id="getval11"></span></td></tr>
+			<tr><td><b><label class = "black">Expectedness</label></td><td>:</td></b><td><span class="black" span id="getval12"></span></td></tr>
+			<tr><td><b><label class = "black">Relatedness</label></td><td>:</td></b><td><span class="black" span id="getval13"></span></td></tr>
+			
+			<tr><td><b><label class = "black">Effectiveness</label></td><td>:</td></b><td><span class="black" span id="getval14"></span></td></tr>
+			<tr><td><b><label class = "black">SideEffects</label></td><td>:</td></b><td><span class="black" span id="getval15"></span></td></tr>
+			<tr><td><b><label class = "black">TestSuccess</label></td><td>:</td></b><td><span class="black" span id="getval16"></span></td></tr>
+			
+			</table>		   
+		   
+				
+				<div id="editor"></div>
+		<button type="button" class="btn-submit" id="submit_details" onclick="PrintUserDetails()">Regulatory Affairs Submit</button>
+		
+	</div>
+	</div>
+				
+	    <script src="./app.js"></script>
+		<script src="./PrincipalInvestigator.js"></script>
+		<script src="./pharmacologist.js"></script>
+	    
+</body>
+</html>
