@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical Trial Dapp</title>
+ 
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+ 
+		
+</head>
+<body>
+<div class="wrapper">
+  
+  
+  <h1>Pharmacologist</h1>
+  
+	
+	<div class="form" id="sign-up-form">
+		
+		<h2 class="form-title">Test Progress</h2>
+		<select name="volunteer" id="volunteer" onchange="GetUserDetails();">
+        <option disabled="disabled" selected text-align:center >Volunteers</option>
+		</select>
+		
+		
+		  <table id = "table1" style='display:none'>  
+			<tr><td><b><label class = "black">Name</label></td><td>:</td></b><td><span class="black" span id="getval1"></span></td></tr>
+			<tr><td><b><label class = "black">Contact No.</label></td><td>:</td></b><td><span class="black" span id="getval2"></span></td></tr>
+			<tr><td><b><label class = "black">D.O.B</label></td><td>:</td></b><td><span class="black" span id="getval3"></span></td></tr>
+			<tr><td><b><label class = "black">Gender</label></td><td>:</td></b><td><span class="black" span id="getval4"></span></td></tr>
+			<tr><td><b><label class = "black">Weight</label></td><td>:</td></b><td><span class="black" span id="getval5"></span></td></tr>
+			<tr><td><b><label class = "black">Height</label><td>:</td></td></b><td><span class="black" span id="getval6"></span></td></tr> 
+			<tr><td><b><label class = "black">Race</label></td><td>:</td></b><td><span class="black" span id="getval7"></span></td></tr>
+			<tr><td><b><label class = "black">Smoking</label></td><td>:</td></b><td><span class="black" span id="getval8"></span></td></tr>
+			<tr><td><b><label class = "black">Allergy</label></td><td>:</td></b><td><span class="black" span id="getval9"></span></td></tr>
+			<tr><td><b><label class = "black">Med.Condition</label></td><td>:</td></b><td><span class="black" span id="getval10"></span></td></tr>
+			</table>
+		   
+		 <select name="testid" id="test_id" onchange="GetCRODetails();">
+        <option disabled="disabled" selected text-align:center >Test id</option>
+		</select>  
+		
+		 <table id = "table2" style='display:none'>  
+			<tr><td><b><label class = "black">Test Hypothesis</label></td><td>:</td></b><td><span class="black" span id="getval12"></span></td></tr>
+			<tr><td><b><label class = "black">Drug Name</label></td><td>:</td></b><td><span class="black" span id="getval13"></span></td></tr>
+			<tr><td><b><label class = "black">Dosage</label></td><td>:</td></b><td><span class="black" span id="getval14"></span></td></tr>
+			<tr><td><b><label class = "black">No: Of Subjects</label></td><td>:</td></b><td><span class="black" span id="getval15"></span></td></tr>
+			<tr><td><b><label class = "black">Criteria</label><td>:</td></td></b><td><span class="black" span id="getval16"></span></td></tr> 
+			<tr><td><b><label class = "black">Role</label></td><td>:</td></b><td><span class="black" span id="getval17"></span></td></tr>
+			</table>
+		
+		
+		<input type="text" class="input-std" id="test_date" placeholder="Test Date">
+		<input type="text" class="input-std" id="week" placeholder="Week(1-5)">
+		<input type="text" class="input-std" id="dosage1" placeholder="Dosage">
+		<input type="text" class="input-std" id="subject_state" placeholder="State of Volunteer(Worse, No Change, Better)">
+		<input type="text" class="input-std" id="side_effects" placeholder="Side effects">
+		<input type="text" class="input-std" id="outcome" placeholder="Outcome">
+		
+		<table>
+		<tr>
+		<td>Termination:</td>
+		<td><input type="radio" id="s1" name="ter" value="Yes" checked></td>
+		<td>Yes</td>
+		<td><input type="radio" id="s2" name="ter" value="No"></td>
+		<td>No &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+		
+		</tr>
+		</table>
+		
+		<button type="button" class="btn-submit" id="set_details" onclick="Terminate()">Update</button>
+		<br>
+		
+		<input type="text" class="input-std" id="pharmacokinetics" style="display:none" placeholder="Pharmacokinetics (What body do to IMP)">
+		<input type="text" class="input-std" id="pharmacodynamics" style="display:none" placeholder="Pharmacodynamics (What IMP do to body)">
+		<table id = "table3" style='display:none'>  
+		<td>Whether IMP works:</td>
+		<td><input type="radio" id="s3" name="imp" value="Yes" checked></td>
+		<td>Yes</td>
+		<td><input type="radio" id="s4" name="imp" value="No"></td>
+		<td>No</td>
+		
+		</tr>
+		</table>
+		<button type="button" class="btn-submit" id="final_details" style="display:none" onclick="savePharmaDetails()">Submit</button>
+	</div>
+	</div>
+				
+	    <script src="./app.js"></script>
+	    <script src="./pharmacologist.js"></script>
+</body>
+</html>
